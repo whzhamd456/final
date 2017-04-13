@@ -6,6 +6,8 @@ var bodyParser = require("body-parser") ;
 var mongoose = require("mongoose") ; 
 var Camp = require("./models/camp.js") ; 
 var seedsDB = require("./seeds.js") ; 
+//var url = process.env.DATABASEURL || "mongodb://localhost/camp_v3" ;
+
 //====settings: view engine, views, public folder, body-parser 
 app.set('view engine', 'ejs') ; 
 app.set('views', path.join(__dirname, 'views')) ; 
@@ -17,7 +19,7 @@ mongoose.connect("mongodb://chris123:123123@ds157390.mlab.com:57390/final") ;
 
 
 //call the seedsDB!!
-seedsDB() ; 
+//seedsDB() ; 
 
 //2: routes 
 app.get('/', function(req,res){
