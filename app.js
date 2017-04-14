@@ -5,7 +5,7 @@ var path = require("path") ;
 var bodyParser = require("body-parser") ; 
 var mongoose = require("mongoose") ; 
 var Camp = require("./models/camp.js") ; 
-var seedsDB = require("./seeds.js") ; 
+//var seedsDB = require("./seeds.js") ; 
 //var url = process.env.DATABASEURL || "mongodb://localhost/camp_v3" ;
 
 //====settings: view engine, views, public folder, body-parser 
